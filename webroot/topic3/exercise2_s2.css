@@ -1,0 +1,21 @@
+div{
+	background-color: blue;
+}
+strong{
+	font-size: 12pt;
+}
+p,ul{
+	background-color: yellowgreen;
+	font-size: 19pt
+}
+#cool,.shiny{
+	background-color: mediumaquamarine;
+}
+a:hover{
+	background-color: hotpink;
+}
+ul a{
+	color:orange;
+}
+
+@import 'exercise2_s3.css' print;

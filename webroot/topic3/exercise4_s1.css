@@ -1,0 +1,62 @@
+
+/*Whole page*/
+html{
+	background-color: cadetblue;
+}
+
+
+/*Header*/
+header{
+	background-color: darkslategrey;
+	padding: 3%;
+}
+header h1{
+	padding: 2%;
+	color: white;
+	font-family: sans-serif;
+	font-style: bold;
+	font-size: 24pt;
+}
+header h2{
+	color: darkseagreen;
+	font-size: 15pt;
+}
+header a{
+	color: gainsboro;
+	font-family: sans-serif;
+	font-size: 14pt;
+}
+body {
+	margin: 10%;
+	background-color: white;
+}
+
+/*Article (main text body)*/
+article{
+	padding: 5% 5%;
+}
+article h1{
+	font-family: sans-serif;
+	padding: 3% 0;
+}
+article p, a{
+	font-size: 14pt;
+}
+article a:visited{
+	color: crimson;	
+}
+
+/*Footer*/
+footer{
+	background-color: darkslategrey;
+	padding: 1% 5%;
+}
+footer a{
+	color: gainsboro;
+	font-family: sans-serif;
+	font-size: 14pt;
+}
+footer p{
+	color: darkseagreen;
+	padding: 1%;
+}

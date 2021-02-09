@@ -1,0 +1,19 @@
+div{
+	background-color: hotpink;
+}
+strong{
+	font-size: 30pt;
+}
+p,ul{
+	background-color: green;
+	font-size: 10pt
+}
+#cool,.shiny{
+	background-color: #8FBC8F;
+}
+a:hover{
+	background-color: darkslategrey;
+}
+ul a{
+	color:darkmagenta;
+}
