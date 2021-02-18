@@ -1,0 +1,39 @@
+caption{
+  font-size: 12pt;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  background: darkred;
+}
+thead{
+  font-weight: bold;
+  background: lightgrey;
+}
+tfoot{
+  background: lightgrey;
+}
+td,th{
+  border: 1px solid grey;
+  text-align: center;
+}
+table{
+  font-family: sans-serif;
+  padding: 5px;
+  border: 1px solid black;
+}
+img{
+  border-radius: 20px;
+  padding: 1px;
+}
+a{
+  display: inline-block;
+  border: 1px solid grey;
+}
+.castpics{
+  border: 1px solid black;
+}
+.castpics td{
+  padding: 0px;
+  border: none;
+  border-collapse: collapse;
+}

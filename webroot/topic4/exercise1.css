@@ -1,0 +1,19 @@
+caption{
+  font-size: 14pt;
+  font-weight: bold;
+  background: turquoise;
+}
+thead{
+  font-weight: bold;
+  background: lightgrey;
+}
+tfoot{
+  background: lightgrey;
+}
+td,th{
+  border: 1px solid grey;
+}
+table{
+  border: 1px solid turquoise;
+  font-family: sans-serif;
+}
