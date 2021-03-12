@@ -1,0 +1,143 @@
+body{
+	font-family:sans-serif;
+}
+
+article{
+	position: relative;
+	padding: 1em;
+}
+
+header{
+	background-color: #a6eb99;
+	position: relative;
+}
+
+nav.header{
+	top: 0;
+	left: 0;
+	padding: 0.1em;
+	margin: none;
+	display: block;
+
+}
+header h1 a{
+	font-size:18pt;	
+	color: black;
+}
+	
+ul{
+	list-style-type:none;
+	padding-left: 1em;
+	padding-right: 1em;
+}	
+ol{
+	list-style-type:none;
+	padding-left: 1em;
+	padding-right: 1em;
+}	
+
+ul.horizontal{
+	padding: 0;
+}
+	
+ul.horizontal > li{
+	display: inline-block;
+	padding-left:1em;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+div{
+	width: inherit;
+	position: relative;
+	display: inline-block;
+	margin-top: 0.5em;
+	
+}
+
+div.research{
+	background-color: #edebe2;
+	color: #807b5c;
+	
+}
+
+div.greydiv{
+	background-color:#f5f5f5;
+}
+
+div.about{
+	margin: 0.1em;
+}
+
+.leftpanel{
+	margin: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	width: 25vw;
+}
+
+
+
+.rightpanel{
+	margin: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25vw;
+	float: right;
+}
+
+.centerpanel{
+	margin-left: 25vw;
+	margin-right: 25vw;
+	
+}
+
+.greydiv aside{
+	background-color: white;
+	margin: 1em;
+}
+
+.greydiv aside h1{
+	background-color: #a6eb99;
+	padding: 1em;
+}
+
+.greydiv aside ul{
+	padding-left: 0;
+}
+
+.greydiv aside li{
+	margin-bottom: 0.5em;
+}
+
+
+
+div.table{
+	width: 100%;
+}
+
+.medal{
+	float: left;
+}
+
+
+
+.profilepicture{
+	display: inline;
+	float:right;
+}
+
+hr{
+	height: 2px;
+	border-width: 0;
+	color: grey;
+	background-color: darkgrey;
+	float: both;
+}

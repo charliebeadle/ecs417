@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\css\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\font\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\helloWorld.html</loc>
+    <lastmod>2021-02-02T11:59:46+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\img\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\index.html</loc>
+    <lastmod>2021-02-02T11:59:46+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\index.php</loc>
+    <lastmod>2021-02-02T11:50:48+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\js\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\js\empty</loc>
+    <lastmod>2021-02-02T11:50:48+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\CharlieBeadleCV.pdf</loc>
+    <lastmod>2019-05-20T15:25:48+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\ex1.html</loc>
+    <lastmod>2021-02-02T12:31:06+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\ex2.html</loc>
+    <lastmod>2021-02-02T12:24:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\ex3.html</loc>
+    <lastmod>2021-02-02T12:31:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\ex4.html</loc>
+    <lastmod>2021-02-02T12:33:16+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\my_CV.html</loc>
+    <lastmod>2021-02-09T12:17:42+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic2\my_homepage.html</loc>
+    <lastmod>2021-02-09T12:27:44+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic3\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic3\CharlieBeadleCV.pdf</loc>
+    <lastmod>2019-05-20T15:25:48+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic3\ex1.html</loc>
+    <lastmod>2021-02-09T12:29:14+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic3\ex2.html</loc>
+    <lastmod>2021-02-09T13:16:34+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic3\ex3.html</loc>
+    <lastmod>2021-02-09T13:18:32+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic3\my_CV.html</loc>
+    <lastmod>2021-02-09T12:17:42+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic3\my_homepage_week3.html</loc>
+    <lastmod>2021-02-09T13:47:56+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic4\</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic4\ex1.html</loc>
+    <lastmod>2021-02-16T12:41:38+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic4\ex2.html</loc>
+    <lastmod>2021-02-16T13:24:46+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>C:\Users\aa\OneDrive\Documents\University\ECS417U - Fundamentals of Web Technology\ecs417\webroot\topic4\ex4.html</loc>
+    <lastmod>2021-02-18T14:02:28+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+</urlset>
