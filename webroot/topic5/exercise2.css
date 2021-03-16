@@ -45,6 +45,17 @@ ul.horizontal > li{
 	padding-left:1em;
 }
 
+ul.float-left{
+	float: left;
+}
+
+
+ol.float-right{
+	position: absolute;
+	float: left;
+}
+
+
 a{
 	text-decoration: none;
 }
@@ -123,7 +134,7 @@ div.table{
 	width: 100%;
 }
 
-.medal{
+li > img{
 	float: left;
 }
 
