@@ -1,0 +1,126 @@
+/*
+GENERAL
+*/
+
+body{
+	font-family:Futura;
+	font-weight: normal;
+	
+}
+
+.fill-screen{
+	min-height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.center-content-vertical{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.center-content-horizontal{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+
+@font-face{
+	font-family: "Constantia";
+	src: url("/fonts/constantia.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "Futura";
+	font-weight: normal;
+	src: url("/fonts/futura/futura medium bt.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "Futura";
+	font-variant: bold;
+	src: url("/fonts/futura/Futura heavy bt.ttf") format("truetype");
+}
+
+/*
+Top Content i.e. navbar
+*/
+
+.top-content-panel{
+	background-color: grey;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	flex-grow: 0;
+	align-items: center;
+	justify-content: space-between;
+
+
+}
+
+.header-logo{
+	margin: 1em;
+}
+
+.header-logo h1{
+	display: inline;
+	font-size: 3em;
+	color: white;
+}
+
+.header-nav{
+margin: 1em;}
+
+nav{
+	float: right;
+	display: inline-block;
+}
+
+nav a{
+	display: inline-block;
+	padding-right: 1em;
+	color: white;
+	text-decoration: none;
+}
+
+/*
+Main content
+*/
+
+.main-content-panel{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-color:darkgray;
+	flex-grow: 1;
+}
+
+.center-logo{
+	font-size: 4em;
+	font-weight: bold;
+}
+
+
+
+/*
+Bottom content
+*/
+
+.bottom-content-panel{
+	width: 100%;
+	flex-grow: 0;
+	background-color: grey;
+}
+
+.social{
+	margin: 1em;
+}
+.social svg{
+	margin: 1em;
+	height: 3em;
+	width: 3em;
+
+}
+.social svg path {
+		fill: white;
+};
