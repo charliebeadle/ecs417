@@ -8,36 +8,43 @@
     <link rel="stylesheet" href="reset.css" type="text/css" />
     <link rel="stylesheet" href="portfolio.css" type="text/css" />
   </head>
-  <body class="fill-screen">
-    <header class="top-content-panel fill-screen-child">
+  <body class="fill-screen-vertical">
+    <header class="top-content-panel fill-screen-horizontal">
+	<div class="top-content content-wrapper">
       <div class="header-logo">
-        <img src="logo.jpg" />
-        <h1>beadle.</h1>
+        <a href="home.html"><h1>beadle</h1></a>
       </div>
       <div class="header-nav">
         <nav role="navigation">
-        <a href="#AboutMe">About Me</a> 
-        <a href="#Experience">Experience</a> 
-        <a href="#Education">Education</a> 
-        <a href="#Skills">Skills</a> 
-        <a href="#Projects">Projects</a></nav>
+			<a href="about.html">about me</a> 
+			<a href="#qualifications">qualifications</a> 
+			<a href="#portfolio">portfolio</a> 
+			<a href="#blog">blog</a>
+			<a href="#contact">contact</a>
+		</nav>
       </div>
+	  </div>
     </header>
-    <div class="main-content-panel fill-screen-child center-content-horizontal">
-      <div class="center-content-vertical">
-        <div class="center-logo">
-          <h1>Charlie Beadle</h1>
-        </div>
-        <div class="center-about">
-          <a href="#AboutMe">
-		  <?php echo file_get_contents("test.txt"); ?>
-            <h2>About</h2>
-          </a>
-        </div>
+    <div class="main-content-panel fill-screen-horizontal center-content-horizontal">
+      <div class="main-content center-content-vertical content-wrapper">
+		<div class=" center-content-horizontal">
+			<div class="center-content-vertical logo-box">
+				<!-- this is an absolutely appropriate amount of nesting and I won't hear otherwise -->
+				<div class="center-logo">
+					<h1>Charlie Beadle</h1>
+				</div>
+				<br>
+				<div class="center-about">
+					<a href="about.html">
+						<h3>about me >></h3>
+					</a>
+				</div>
+			</div>
+		</div>
       </div>
     </div>
-    <div class="bottom-content-panel fill-screen-child">
-      <div class="social center-content-horizontal">
+    <div class="bottom-content-panel fill-screen-horizontal">
+      <div class="content-wrapper social center-content-horizontal">
       <a href="https://www.linkedin.com/in/charlie-beadle-05ab19154/">
         <svg xmlns="http://www.w3.org/2000/svg" height="100" viewBox="0 0 512 512" width="100" stroke-linejoin="round"><path d="M256 0c141.3 0 256 114.7 256 256 0 141.3-114.7 256-256 256 -141.3 0-256-114.7-256-256 0-141.3 114.7-256 256-256Zm-80 399.9l0-199.9 -66.5 0 0 199.9 66.5 0Zm239.6 0l0-114.6c0-61.4-32.8-90-76.5-90 -35.3 0-51 19.4-59.9 33l0-28.3 -66.4 0c0.9 18.8 0 199.9 0 199.9l66.4 0 0-111.6c0-6 0.4-11.9 2.2-16.2 4.8-11.9 15.7-24.3 34.1-24.3 24 0 33.7 18.3 33.7 45.2l0 107 66.5 0Zm-272.4-296.3c-22.7 0-37.6 15-37.6 34.5 0 19.2 14.4 34.5 36.7 34.5l0.4 0c23.2 0 37.6-15.4 37.6-34.5 -0.4-19.6-14.4-34.5-37.1-34.5Z"/></svg>
 

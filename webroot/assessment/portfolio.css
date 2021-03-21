@@ -3,16 +3,58 @@ GENERAL
 */
 
 body{
-	font-family:Futura;
-	font-weight: normal;
+	font-family:'futura';
+	font-size: 1em;
 	
 }
 
-.fill-screen{
+p{
+	font-family: constantia;
+	letter-spacing: 0.05em;
+	line-height: 1.5em;
+	font-size: 1.5em;
+	padding-left: 3em;
+}
+
+.header-wrapper{
+	background-color: black;
+	display:inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+.dropcolour{
+	color: white;
+	text-shadow: -0.05em 0.05em #22ff00;
+}
+
+.fill-screen-vertical{
 	min-height: 100vh;
+	min-width: 100vw;
 	display: flex;
 	flex-flow: column nowrap;
+	align-items: center;
 }
+
+.fill-screen-horizontal{
+	width: 100%
+}
+
+ .content-wrapper{
+	max-width: 80em;
+	flex-basis: 80em;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+ }
 
 .center-content-vertical{
 	display: flex;
@@ -26,21 +68,42 @@ body{
 	justify-content: center;
 }
 
-@font-face{
-	font-family: "Constantia";
-	src: url("/fonts/constantia.ttf") format("truetype");
+.main-content-panel{
+	background-color: #e6e6e6;
+	flex-grow: 1;
+	color:black;
 }
 
-@font-face{
-	font-family: "Futura";
-	font-weight: normal;
-	src: url("/fonts/futura/futura medium bt.ttf") format("truetype");
+.main-content{
+	background-color: white;
 }
 
-@font-face{
-	font-family: "Futura";
-	font-variant: bold;
-	src: url("/fonts/futura/Futura heavy bt.ttf") format("truetype");
+@font-face {
+    font-family: 'constantia';
+    src: url('fonts/constantia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('fonts/futura_heavy.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('fonts/futura_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+	text-decoration: none;
 }
 
 /*
@@ -48,29 +111,37 @@ Top Content i.e. navbar
 */
 
 .top-content-panel{
-	background-color: grey;
-	width: 100%;
+	background-color: #1a1a1a;
+	color:white;
+}
+
+.top-content{
 	display: flex;
 	flex-flow: row wrap;
 	flex-grow: 0;
 	align-items: center;
 	justify-content: space-between;
-
-
 }
 
 .header-logo{
 	margin: 1em;
+	border: none;
+
 }
 
 .header-logo h1{
 	display: inline;
 	font-size: 3em;
+	font-weight: bold;
+	letter-spacing: 0.025em;
+	border: none;
 	color: white;
 }
 
 .header-nav{
-margin: 1em;}
+	
+	margin: 1em;
+}
 
 nav{
 	float: right;
@@ -80,40 +151,51 @@ nav{
 nav a{
 	display: inline-block;
 	padding-right: 1em;
-	color: white;
-	text-decoration: none;
+	color:white;
+	font-size: 1.1em;
 }
 
 /*
-Main content
+homepage main content
 */
 
-.main-content-panel{
-	padding-top: 2em;
-	padding-bottom: 2em;
-	background-color:darkgray;
-	flex-grow: 1;
+
+
+.logo-box{
+	padding: 2em;
 }
 
 .center-logo{
-	font-size: 4em;
+	font-size: 1em;
+	font-family: 'futura';
 	font-weight: bold;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.center-about{
+	align-self: flex-end;
+}
+
+.center-about a{
+	text-decoration: none;
+	color:black;
+	font-size: 2em;
 }
 
 
-
 /*
-Bottom content
+footer
 */
 
 .bottom-content-panel{
 	width: 100%;
 	flex-grow: 0;
-	background-color: grey;
+	background-color: #1a1a1a;
 }
 
 .social{
-	margin: 1em;
+	padding: 1em;
 }
 .social svg{
 	margin: 1em;
@@ -123,4 +205,33 @@ Bottom content
 }
 .social svg path {
 		fill: white;
-};
+}
+
+/*
+about me page
+*/
+
+.about  {
+	position: relative;
+	margin: 4em;
+	width: 90%;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+}
+
+.headshot{
+	width: 300px;
+	height: 300px;
+	float: left;
+	display: inline-block;
+	padding: 1.5em;
+	margin: auto;
+}
+
+.about > .container{
+	padding-top: 5em;
+	max-width: 750px;
+	margin: auto;
+}
