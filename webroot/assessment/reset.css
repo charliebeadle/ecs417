@@ -1,7 +1,7 @@
 html, body, div, span,
 h1, h2, h3, h4, h5, h4,
 p, a, li, article, hr,
-header, footer, img, i, iframe
+header, footer, img, i, iframe, section, hgroup
 {
 	margin: 0;
 	padding: 0;

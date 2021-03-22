@@ -16,10 +16,13 @@ p{
 	padding-left: 3em;
 }
 
+
+
 .header-wrapper{
 	background-color: black;
 	display:inline-block;
 	padding: 0.5em 1em 0.5em 1em;
+	color: white;
 }
 
 h1 {
@@ -30,7 +33,22 @@ h2 {
 	font-size: 3em;
 }
 
-.dropcolour{
+h3{
+	font-size: 2em;
+}
+
+h4{
+	font-size: 1em;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+.drop-colour{
 	color: white;
 	text-shadow: -0.05em 0.05em #22ff00;
 }
@@ -78,6 +96,45 @@ h2 {
 	background-color: white;
 }
 
+.post-stack{
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+	margin: auto;
+}
+
+.post{
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+	margin: auto;
+	margin-top: 4em;
+}
+
+.post-content{
+	display: block;
+	margin: auto;
+	max-width: 750px;
+}
+
+figure{
+	display: inline-block;
+	padding: 1.5em;
+	margin: auto;
+}
+
+figure img{
+	width: 300px;
+	display: inline-block;
+}
+
+figcaption{
+	text-align: center;
+}
+
 @font-face {
     font-family: 'constantia';
     src: url('fonts/constantia.ttf') format('truetype');
@@ -102,9 +159,7 @@ h2 {
 
 }
 
-a{
-	text-decoration: none;
-}
+
 
 /*
 Top Content i.e. navbar
@@ -200,40 +255,103 @@ footer
 	padding: 1em;
 }
 .social svg{
-	margin: 1em;
-	height: 3em;
-	width: 3em;
+	padding: 15px;
+	height: 50px;
+	width: 50px;
 
 }
 .social svg path {
-		fill: white;
+	fill: white;
 }
 
 /*
 about me page
 */
 
-.about  {
+
+
+
+
+
+/*
+contact page
+*/
+
+.contact{
 	position: relative;
 	margin: 4em;
 	width: 90%;
 	display: flex;
-	flex-flow: row wrap;
-	align-content: flex-start;
+	flex-flow: column wrap;
+	align-content: center;
 	justify-content: flex-start;
 }
 
-.headshot{
-	width: 300px;
-	height: 300px;
-	float: left;
-	display: inline-block;
-	padding: 1.5em;
-	margin: auto;
+.contact-padding{
+	padding-left: 6em;
+	padding-top:3em;
 }
 
-.about > .container{
-	padding-top: 5em;
-	max-width: 750px;
-	margin: auto;
+.contact svg{
+	float: left;
+	padding: 15px;
+	height: 50px;
+	width: 50px;
 }
+
+.contact svg path{
+	fill: black;	
+}
+
+.contact-line{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	margin-left: 3em;
+}
+
+.contact-line p{
+	padding: 0;
+}
+
+/*
+Blog page
+*/
+
+.blog{
+	width: 90%;
+}
+
+legend{
+	text-align:center;
+}
+
+.blog-post-form{
+	width: 100%;
+}
+
+.blog-post-form div{
+	flex-basis: 750px;
+}
+
+textarea#blog-content{
+	resize: vertical;
+	width: 100%;
+	min-height: 200px;
+}
+
+form{
+	border-style: solid;
+	border-width: thin;
+	padding: 1em;
+}
+
+table{
+	margin: auto;
+	width:100%
+}
+
+/*
+SVG data
+*/
