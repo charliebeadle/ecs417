@@ -118,7 +118,6 @@ $blogpost_form = <<<BLOGPOST_FORM
 			  <tr>
 				<td>
 				  <input type="text" id="blog-title" name="blog-title" {$fn('title')}>
-				  <input type="color" id="title-colour" name="title-colour"><br><br>
 				</td>
 			  </tr>
 			  <tr>

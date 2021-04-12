@@ -157,7 +157,6 @@
 				if (isset($_POST['blog-title']) && !empty(trim($_POST['blog-title']))) {
 					//title is filled in
 					$title = trim($_POST['blog-title']);
-					$title_colour = $_POST['title-colour'];
 
 					if (strlen($title) < 5) {
 						$blogpost_err = "Minimum post size is 5 characters!";
@@ -198,8 +197,8 @@
 
 				if($preview == FALSE){
 					$sql = <<<SQL_BLOG
-INSERT INTO blogposts (title, body, colour, image_url, image_position, user_id, username)
-VALUES ('$title', '$body', '$title_colour', $image_url, $image_pos, '$user_id', '$username');
+INSERT INTO blogposts (title, body, image_url, image_position, user_id, username)
+VALUES ('$title', '$body', $image_url, $image_pos, '$user_id', '$username');
 SQL_BLOG;
 					if ($conn->query($sql) === TRUE) {
 
@@ -212,9 +211,6 @@ SQL_BLOG;
 					$preview_post = array();
 					$preview_post['title'] = "PREVIEW:".$title;
 					$preview_post['body'] = $body;
-					if(isset($title_colour)) {
-						$preview_post['colour'] = $title_colour;
-					}
 					if(isset($image_url)){
 						$preview_post['image_url'] = $image_url;
 					}else{
