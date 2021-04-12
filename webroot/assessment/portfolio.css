@@ -5,7 +5,7 @@ GENERAL
 body{
 	font-family:'futura';
 	font-size: 1em;
-	
+
 }
 
 p{
@@ -46,7 +46,9 @@ a{
 	color: inherit;
 }
 
-
+img{
+	width: 100%;
+}
 
 .drop-colour{
 	color: white;
@@ -119,6 +121,8 @@ a{
 	max-width: 750px;
 }
 
+
+
 figure{
 	display: inline-block;
 	padding: 1.5em;
@@ -139,7 +143,7 @@ figcaption{
     src: url('fonts/constantia.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-	
+
 }
 
 @font-face {
@@ -195,7 +199,7 @@ Top Content i.e. navbar
 }
 
 .header-nav{
-	
+
 	margin: 1em;
 }
 
@@ -299,7 +303,7 @@ contact page
 }
 
 .contact svg path{
-	fill: black;	
+	fill: black;
 }
 
 .contact-line{

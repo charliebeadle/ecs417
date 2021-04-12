@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="exercise1.css" />
+ <title>Week 10 - Exercise 5</title>
+</head>
+<body>
+	<form action="ex5.php" method="post">
+		<label for="name" name ="name" id="name">Name:</label><br>
+		<input type="text" name="name" id="name">
+		<br>
+		<label for="bulbs" name="bulbs" id="bulbs">Bulbs:</label><br>
+		<input type="checkbox" name="bulbs[]" value="4x100">4 x 100W - £2.39<br>
+		<input type="checkbox" name="bulbs[]" value="8x100">8 x 100W - £4.29<br>
+		<input type="checkbox" name="bulbs[]" value="4x100LL">4 x 100W Long Life - £3.95<br>
+		<input type="checkbox" name="bulbs[]" value="8x100LL">8 x 100W Long Life - £7.49<br>
+		<br>
+		<label for="batts" name="batts" id="batts">Batteries:</label><br>
+		<input type="number" name="batts" min="0"><br>
+		<br>
+		<label for="card" name="card" id="card">Card:</label><br>
+		<input type="radio" name="card" value="visa">Visa<br>
+		<input type="radio" name="card" value="mastercard">Mastercard<br>
+		<input type="radio" name="card" value="amex">American Express<br>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html> 
