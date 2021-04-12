@@ -204,7 +204,7 @@ SQL_BLOG;
 					if ($conn->query($sql) === TRUE) {
 
 					} else {
-						$blogpost_err = "Failed!";
+						$blogpost_err = $conn->query($sql);
 					}
 				} else{
 
