@@ -7,7 +7,8 @@
 	<title>Charlie Beadle</title>
 	<link rel="stylesheet" href="reset.css" type="text/css"/>
 	<link rel="stylesheet" href="portfolio.css" type="text/css"/>
-	<script src="script.js"></script>
+	<script>app.use("/static", express.static('./static'))</script>
+	<script src="static/script.js"></script>
 	<?php
 	session_start();
 
