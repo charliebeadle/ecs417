@@ -80,7 +80,7 @@
 		$loggedin = false;
 	}
 
-
+	global $preview, $preview_post;
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 		console_log("POST + SUBMIT");
@@ -206,7 +206,6 @@ SQL_BLOG;
 						$blogpost_err = "Failed! " .  $conn ->error;
 					}
 				} else{
-
 
 					$preview_post = array();
 					$preview_post['title'] = "PREVIEW:".$title;
@@ -350,7 +349,7 @@ BLOG;
 
 			$image_position = $blogdata['image_position'];
 
-			if ($image_position == "R" || $image_position == "r") {
+			if ($image_position == "R" || $image_position == "r" || $image_position == "right") {
 				$markup = $markup . $image;
 			} else {
 				// left is defualt
