@@ -98,7 +98,21 @@ $registration_form = <<<REGISTRATION
 </section>
 REGISTRATION;
 $fn = 'previewValues';
+global $preview_post, $preview;
 
+if(isset($preview)){
+	console_log("isset");
+	$title = "value = \"" . $preview_post['title'] . "\"";
+	$body = $preview_post['body'];
+
+	if(isset($preview_post['image_url'])){
+		$image_url = "value = \"" . $preview_post['image_url'] . "\"";
+	} else{
+		$image_url = "";
+	}
+} else{
+	$title = $body = $image_url = "";
+}
 
 $blogpost_form = <<<BLOGPOST_FORM
 <section class="post blog-post-form" >
@@ -117,7 +131,7 @@ $blogpost_form = <<<BLOGPOST_FORM
 			  </tr>
 			  <tr>
 				<td>
-				  <input type="text" id="blog-title" name="blog-title" {$fn('title')}>
+				  <input type="text" id="blog-title" name="blog-title" $title>
 				</td>
 			  </tr>
 			  <tr>
@@ -127,7 +141,7 @@ $blogpost_form = <<<BLOGPOST_FORM
 			  </tr>
 			  <tr>
 				<td>
-				  <textarea id="blog-content" name="blog-content">{$fn('body', false)}</textarea>
+				  <textarea id="blog-content" name="blog-content">$body</textarea>
 				</td>
 			  </tr>
 			  <tr>
@@ -137,7 +151,7 @@ $blogpost_form = <<<BLOGPOST_FORM
 			  </tr>
 			  <tr>
 				<td>
-				  <input type="url" id="blog-image" name="blog-image" {$fn('image_url')}>
+				  <input type="url" id="blog-image" name="blog-image" $image_url>
 				  </td>
 				</tr>
 				<tr>

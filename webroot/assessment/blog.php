@@ -298,6 +298,7 @@ SQL_BLOG;
 	{
 
 		//THIS IS ALL FUCKED
+		//I HATE THIS ALL WHY DOESN@T IT WORK
 
 		console_log("PREVIEW VALUES START");
 		//$preview = $_SESSION['preview'];
@@ -321,8 +322,7 @@ SQL_BLOG;
 			}
 		}
 	}
-	function displayPost($blogdata)
-	{
+	function displayPost($blogdata){
 		console_log("displaypost start");
 		$title = $blogdata['title'];
 		$body = $blogdata['body'];
@@ -330,14 +330,22 @@ SQL_BLOG;
 		$date_formatted = $date->format('d/m/y');
 		$username = $blogdata['username'];
 
+		if(isset($blogdata['preview']) && $blogdata['preview'] == true){
+			$title_tag = "title-preview";
+			$body_tag = "body-preview";
+			$url_tag = "url-preview";
+		} else{
+			$title_tag = $body_tag = $url_tag = "";
+		}
+
 		$markup =
 			<<<BLOG
 <div class="post-content">
 	<div class="header-wrapper">
-		<h2 class="drop-colour">$title</h2>
+		<h2 class="drop-colour" id="$title_tag">$title</h2>
 	</div>
 	<h4>$date_formatted by $username</h4>
-  <p>
+  <p id="$body_tag">
   $body
   </p>
 </div>
@@ -345,7 +353,7 @@ BLOG;
 
 		if (isset($blogdata['image_url']) && !empty($blogdata['image_url']) && $blogdata['image_url'] != "NULL") {
 			$image_url = $blogdata['image_url'];
-			$image = "<figure><img src=\"$image_url\"></figure>";
+			$image = "<figure><img id=\"$url_tag\" src=\"$image_url\"></figure>";
 
 			$image_position = $blogdata['image_position'];
 
@@ -422,8 +430,13 @@ WRAPPER;
 				<?php
 
 				global $preview, $preview_post;
+				console_log("displayPost preview: " . $preview);
 				if(isset($preview) && $preview == TRUE && isset($preview_post)){
+					$previewing = true;
+					$preview_post['preview'] = true;
 					echo displayPost($preview_post);
+				} else{
+					$previewing = false;
 				}
 
 				if(isset($_SESSION['filter-month']) && $_SESSION['filter-month'] != 'all'){
@@ -447,6 +460,37 @@ WRAPPER;
 
 				if ($loggedin) {
 					echo $blogpost_form;
+					if($previewing):?>
+						<script>
+
+							// HACKY SACK
+
+							console.log("WORKED!!!!!!")
+							let title = document.getElementById("title-preview").textContent;
+							title = title.substring("PREVIEW:".length, title.length);
+							let body = document.getElementById("body-preview").textContent;
+							let url;
+							if(document.getElementById("url-preview") == null){
+								url = " ";
+							} else{
+								url = document.getElementById("url-preview").textContent;
+							}
+							//let url = document.getElementById("url-preview").value;
+
+							console.log(title);
+							console.log(body);
+							console.log(url);
+
+							let titleinput = document.getElementById("blog-title");
+							let bodyinput = document.getElementById("blog-content");
+							let urlinput = document.getElementById("blog-image");
+
+							titleinput.value = title;
+							bodyinput.value = body;
+							urlinput.value = value;
+
+						</script>
+					<?php endif;
 					echo $logout_form;
 					if (!empty($blogpost_err)) {
 						popup_alert($blogpost_err);
