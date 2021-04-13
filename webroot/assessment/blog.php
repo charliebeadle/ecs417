@@ -444,9 +444,9 @@ WRAPPER;
 					$month = date("n", $date);
 					$year = date("Y", $date);
 					console_log("Month: $month, Year: $year");
-					$sql = "SELECT * FROM blogposts WHERE MONTH(created_at)=$month AND YEAR(created_at)=$year ORDER BY created_at DESC";
+					$sql = "SELECT * FROM blogposts WHERE MONTH(created_at)=$month AND YEAR(created_at)=$year";
 				} else{
-					$sql = "SELECT * FROM blogposts ORDER BY created_at DESC";
+					$sql = "SELECT * FROM blogposts";
 				}
 				$blogposts = $conn->query($sql);
 
