@@ -454,6 +454,15 @@ WRAPPER;
 				while ($blog = $blogposts->fetch_assoc()) {
 					$blogs[] = $blog;
 				}
+
+				//sorting algorithm because apparently SQL sorting is toooo easy
+
+				usort($blogs, function($a, $b){
+					return strtotime($b['created_at']) - strtotime($a['created_at']);
+				});
+
+				console_log($blogs);
+
 				foreach ($blogs as $blog) {
 					echo displayPost($blog);
 				}
